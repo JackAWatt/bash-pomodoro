@@ -1,11 +1,10 @@
-#!/bin/bash 
 COUNTER=0
 while [  $COUNTER -lt 5 ]; do
   let COUNTER=COUNTER+1 
   say "main start"
   clear
   cat task.txt
-  sleep 1500 
+  sleep "$1"
   clear
   if [ $COUNTER -eq "4" ]; then
     cat long.txt
@@ -13,11 +12,11 @@ while [  $COUNTER -lt 5 ]; do
   fi
   say "break start"
   cat break.txt
-  sleep 300
+  sleep "$2"
   say "break done"
   if [ $COUNTER -eq "4" ]; then
     let COUNTER=0
-    sleep 900
+    sleep "$3"
   fi
 
 done
