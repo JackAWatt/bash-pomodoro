@@ -1,6 +1,6 @@
 #!/bin/bash 
 COUNTER=0
-while [  $COUNTER -lt 10 ]; do
+while [  $COUNTER -lt 5 ]; do
   let COUNTER=COUNTER+1 
   say "main start"
   clear
