@@ -1,11 +1,16 @@
 COUNTER=0
-a=$1
-b=$2
-c=$3
-t=60
-a=$((a * t))
-b=$((b * t))
-c=$((c * t))
+a=1500
+b=300
+c=900
+if [ $# -gt 3 ]; then
+  a=$1
+  b=$2
+  c=$3
+  t=60
+  a=$((a * t))
+  b=$((b * t))
+  c=$((c * t))
+fi
 while [  $COUNTER -lt 5 ]; do
   let COUNTER=COUNTER+1 
   say "main start"
