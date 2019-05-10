@@ -18,13 +18,13 @@ Drop the .sh and 4 .txt files into a directory
 
 
 
-You can call the script with arguments for the task, break, and long break lengths.
+The script can be called with arguments for the task, break, and long break lengths.
 
 ```bash
 ./pomodoro.sh 25 5 20
 ```
 
-You can call the script with no arguments for the default lengths of 25, 5, and 20 minutes
+the script can also be called with no arguments for the default lengths of 25, 5, and 20 minutes
 
 ```bash
 ./pomodoro.sh
